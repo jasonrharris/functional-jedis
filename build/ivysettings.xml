@@ -1,0 +1,26 @@
+<ivysettings>
+    <property name="repo.dir" value="/Users/jasonhome/Dropbox/myWork/myIvyRepo"/>
+    <settings defaultResolver="chained"/>
+    <resolvers>
+        <filesystem name="internal">
+            <ivy pattern="${repo.dir}/[module]/ivy-[revision].xml"/>
+            <artifact pattern="${repo.dir}/[module]/[artifact]-[revision].[ext]"/>
+        </filesystem>
+        <chain name="chained" returnFirst="true">
+            <ibiblio name="ibiblio" m2compatible="true"/>
+            <ibiblio name="java-net-maven1" root="http://download.java.net/maven/1" pattern="${java.net.maven.pattern}"
+                     m2compatible="false"/>
+            <ibiblio name="java-net-maven2" root="http://download.java.net/maven/2/" m2compatible="true"/>
+            <url name="sourceforge">
+                <artifact
+                        pattern="http://easynews.dl.sourceforge.net/sourceforge/[organization]/[module]_[revision].zip"/>
+                <artifact
+                        pattern="http://easynews.dl.sourceforge.net/sourceforge/[organization]/[module]-[revision].zip"/>
+            </url>
+        </chain>
+    </resolvers>
+</ivysettings>
+
+
+
+

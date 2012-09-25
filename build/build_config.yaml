@@ -1,0 +1,20 @@
+#directories used to locate source files
+src_dir : "../src"
+test_dir : "../tests"
+configuration_dir : "../configuration"
+artifact_version : "0.99"
+
+# where the build will end up
+artifact_file : "../buildOutput/JedisWrapper.jar"
+
+#javac opts
+javac_max_mem : "1024M"
+
+debug_port : "5005"
+ 
+system_params : [
+environment : "local"
+]
+
+
+    

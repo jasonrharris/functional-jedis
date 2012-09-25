@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+  <info organisation="JAK" module="jedisWrapper"/>
+   <configurations>
+    <conf name="compile" />
+    <conf name="test" visibility="private"/>
+   </configurations>
+
+    <dependencies>
+        <dependency org="commons-lang" name="commons-lang" rev="2.0" conf="compile->default"/>
+        <dependency org="redis.clients" name="jedis" rev="2.0.0" conf="compile->default"/>
+        <dependency org="com.google.inject" name="guice" rev="3.0" conf="compile->default"/>
+        <dependency org="commons-pool" name="commons-pool" rev="1.5.6" conf="compile->default"/>
+        <dependency org="org.slf4j" name="slf4j-api" rev="1.6.4" conf="compile->default"/>
+        <dependency org="ch.qos.logback" name="logback-classic" rev="1.0.0" conf="compile->default"/>
+        <dependency org="joda-time" name="joda-time" rev="2.0" conf="compile->default"/>
+        <dependency org="org.hamcrest" name="hamcrest-core" rev="1.3.RC2" conf="test->default"/>
+        <dependency org="org.hamcrest" name="hamcrest-library" rev="1.3.RC2" conf="test->default"/>
+        <dependency org="org.jmock" name="jmock" rev="2.5.1" conf="test->default"/>
+        <dependency org="org.apache.commons" name="commons-lang3" rev="3.0.1" conf="compile->default" />
+        <dependency org="org.yaml" name="snakeyaml" rev="1.8" conf="compile->default" />
+
+        <dependency org="org.testng" name="testng" rev="6.3" conf="test->default">
+            <exclude name="snakeyaml"/>
+                </dependency>
+    </dependencies>
+</ivy-module>
+
+

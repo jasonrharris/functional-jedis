@@ -1,0 +1,11 @@
+#directories for generated classes - this can be anywhere on your machine
+build_dir : "../buildOutput"
+
+#locations of tools
+ant_home : "/usr/share/ant/"
+
+#java home
+java_home : "/Library/Java/JavaVirtualMachines/jdk1.7.0_07.jdk/Contents/Home"
+
+
+

@@ -1,0 +1,36 @@
+
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Stickers">
+	<parameter name="rake_build" value="@false@" />
+
+	<test name="Unit-Tests">
+		
+		<groups>
+			<run>
+				<include name="Unit" />
+				<exclude name="Integration" />
+			</run>
+		</groups>
+		<!-- 'classes' element below is useful to test script behaviour . Comment out packages element when using it --> 
+		
+		<packages>
+			<package name="com.stickers.*" />
+		</packages>
+
+	</test>
+
+	<test name="Integration-Tests">	
+		<groups>
+			<run>
+				<include name="Integration" />
+				<exclude name="Unit" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.stickers.*" />
+		</packages>
+		
+		</test>
+</suite>
+

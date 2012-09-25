@@ -1,0 +1,11 @@
+#directories for generated classes - this can be anywhere on your machine
+build_dir : "../buildOutput"
+
+# where the build will end up
+artifact_file : "../buildOutput/JedisWrapper.jar"
+
+#locations of tools
+ant_home : "c:/apache/apache-ant-1.8.2"
+
+
+

@@ -1,4 +1,4 @@
-package com.jedisWrapper.marshalAnUnmarshal;
+package com.jedisWrapper.marshalAndUnmarshal;
 
 import java.util.Map;
 

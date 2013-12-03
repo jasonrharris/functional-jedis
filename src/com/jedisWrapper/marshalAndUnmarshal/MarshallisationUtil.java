@@ -1,4 +1,4 @@
-package com.jedisWrapper.marshalAnUnmarshal;
+package com.jedisWrapper.marshalAndUnmarshal;
 
 import com.jedisWrapper.ids.LongIdentifier;
 import org.apache.commons.lang3.StringUtils;
